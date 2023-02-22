@@ -29,10 +29,10 @@
 Помогите Кате отгадать задуманные Петей числа.
 """
 
-x = int(input())
-y = int(input())
-for i in range(x):
-    for j in range(y):
-        if x == i + j and y == i * j:
-            print(i, j)
+s = int(input('Задай сумму двух чисел \n'))
+p = int(input('Задай произведение чисел \n'))
+for x in range(s):
+    for y in range(p):
+        if s == x + y and p == x * y:
+            print(f'первое число ="{x}", второе число ="{y}"')
 
